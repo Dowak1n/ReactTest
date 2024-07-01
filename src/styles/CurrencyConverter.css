@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .field label {
+    margin-bottom: 8px;
+  }
+  
+  @media (min-width: 600px) {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .field {
+      flex: 1;
+      margin-right: 16px;
+    }
+  
+    .field:last-child {
+      margin-right: 0;
+    }
+  }
